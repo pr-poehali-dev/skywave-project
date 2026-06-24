@@ -70,11 +70,23 @@ export default function HeroSection() {
             >
               <div className="space-y-4">
                 <p className="text-3xl font-light text-white md:text-4xl lg:text-5xl">
-                  Алексей Иванов
+                  ♛ Klinkov Consulting Group
                 </p>
                 <p className="text-xl font-light text-white/80 md:text-2xl">
-                  Креативный директор | Дизайнер
+                  Бизнес-консалтинг и стратегическое развитие
                 </p>
+                <p className="max-w-xl text-base font-light leading-relaxed text-white/70 md:text-lg">
+                  Помогаем компаниям расти: выстраиваем стратегию, оптимизируем
+                  процессы и увеличиваем прибыль. Ваш надёжный партнёр в бизнесе.
+                </p>
+                <div className="pt-4">
+                  <a
+                    href="#contact"
+                    className="inline-flex items-center rounded-full bg-white px-8 py-3 text-base font-medium text-black transition-all hover:bg-white/90"
+                  >
+                    Получить консультацию
+                  </a>
+                </div>
                 <div className="flex gap-6 pt-4">
                   <a
                     href="https://t.me/"
