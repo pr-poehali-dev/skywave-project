@@ -43,25 +43,35 @@ export default function HeroSection() {
 
       <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent" />
 
+      {/* Навигация */}
+      <nav className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-8 py-6 md:px-16">
+        <span className="text-lg font-medium text-white">♛ KCG</span>
+        <div className="hidden gap-8 md:flex">
+          {[
+            { label: 'Услуги', href: '#services' },
+            { label: 'Кейсы', href: '#cases' },
+            { label: 'Контакты', href: '#contact' },
+          ].map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className="text-sm font-light text-white/70 transition-colors hover:text-white"
+            >
+              {item.label}
+            </a>
+          ))}
+        </div>
+        <a
+          href="#contact"
+          className="rounded-full border border-white/30 px-5 py-2 text-sm text-white/80 transition-all hover:border-white hover:text-white"
+        >
+          Консультация
+        </a>
+      </nav>
+
       <div className="relative z-10 flex h-full items-center">
         <div className="container mx-auto px-8 md:px-16">
           <div className="flex max-w-2xl flex-col gap-12">
-            {/* Portrait */}
-            <div
-              className={cn(
-                'transform transition-all duration-1000 ease-out',
-                isLoaded ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
-              )}
-            >
-              <div className="relative h-48 w-48 overflow-hidden rounded-full border-4 border-white shadow-2xl md:h-64 md:w-64">
-                <img
-                  src="https://cdn.poehali.dev/templates/creative-portfolio-ru/portrait.jpg"
-                  alt="Креативный специалист"
-                  className="h-full w-full object-cover"
-                />
-              </div>
-            </div>
-
             <div
               className={cn(
                 'transform transition-all duration-1000 delay-300 ease-out',
