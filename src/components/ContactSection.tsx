@@ -49,7 +49,7 @@ export default function ContactSection() {
           <div className="mb-12 grid gap-6 md:grid-cols-3">
             {[
               { icon: '📞', label: 'Телефон', value: '+7 (915) 037-33-77', href: 'tel:+79150373377' },
-              { icon: '✉️', label: 'Email', value: 'info@klinkov.ru', href: 'mailto:info@klinkov.ru' },
+              { icon: '✉️', label: 'Email', value: 'klinkoof@yandex.ru', href: 'mailto:klinkoof@yandex.ru' },
               { icon: '💬', label: 'Telegram', value: '@klinkov_cg', href: 'https://t.me/klinkov_cg' },
             ].map((item) => (
               <a
